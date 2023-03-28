@@ -66,15 +66,6 @@
     function goodButtonFunction(event) {
       event.preventDefault();
       loadSpotifyiFrame("https://open.spotify.com/embed/playlist/37i9dQZF1DX3rxVfibe1L0?utm_source=generator");
-      fetch('/submit/Good')
-        .then(response => response.json())  // convert response to JSON
-        .then(data => {
-          // handle the JSON data
-          console.log(data);
-          const element = document.getElementById('response-text'); // document is HTML file, get the h1 id to change
-          element.textContent = data; // set new text
-        })
-        .catch(error => console.error(error)); // handle errors
     }
   </script>
 
@@ -82,15 +73,6 @@
     function neutralButtonFunction(event) {
       event.preventDefault();
       loadSpotifyiFrame("https://open.spotify.com/embed/playlist/4x9OtLt7bsmvqktbF0Y0Gm?utm_source=generator");
-      fetch('/submit/Neutral')
-        .then(response => response.json())  // convert response to JSON
-        .then(data => {
-          // handle the JSON data
-          console.log(data);
-          const element = document.getElementById('response-text'); // document is HTML file, get the h1 id to change
-          element.textContent = data; // set new text
-        })
-        .catch(error => console.error(error)); // handle errors
     }
   </script>
 
@@ -98,15 +80,6 @@
     function badButtonFunction(event) {
       event.preventDefault();
       loadSpotifyiFrame("https://open.spotify.com/embed/playlist/37i9dQZF1EIg6gLNLe52Bd?utm_source=generator");
-      fetch('/submit/Bad')
-        .then(response => response.json())  // convert response to JSON
-        .then(data => {
-          // handle the JSON data
-          console.log(data);
-          const element = document.getElementById('response-text'); // document is HTML file, get the h1 id to change
-          element.textContent = data; // set new text
-        })
-        .catch(error => console.error(error)); // handle errors
     }
   </script>
 </body>
